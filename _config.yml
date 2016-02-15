@@ -9,7 +9,7 @@ blog:
     name:宋小寅                                             # 博客名称
     description:个人博客                                     # 博客描述
     title:宋                                               # 网页标题
-    url:http://xiaoyinsong.github.io/                  # 博客地址
+    url:xiaoyinsong.github.io                # 博客地址
     duoshuo:                                             # 多说ID
     tongji:                                              # 百度统计ID
     qiniu:                                               # 七牛云地址
