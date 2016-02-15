@@ -32,6 +32,7 @@ sudo make install
 
 二 入门
 让我们来做一个超复杂的hello world的程序。首先创建一个文件叫做base.js,其中实现命名空间，类继承等。以便实现传统(java)的设计模式。
+<code>
 if (typeof Song == "undefined" || !Song) {
 	var Song = {
 		'version' : '1.1.0',
@@ -268,7 +269,7 @@ new StandardFormat({
 	name:"hello"
 });
 })(Song);
-
+</code>
 好了打开浏览器，访问http://127.0.0.1:8124，显示出hello。
 到此说明我之前写页面的js方式都可以用。
 
