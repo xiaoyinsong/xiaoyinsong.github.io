@@ -1,37 +1,37 @@
 ---                                                                                                                                                             
 layout: post
-title: "��Node.js��nodeѧϰ"
-description: "nodeѧϰ"
+title: "【Node.js】node学习"
+description: "node学习"
 category: 'node.js'
 ---
 
-nodeѧϰ 
-һ ���ذ�װ
-1.��װ������ 
+node学习 
+一 下载安装
+1.安装依赖包 
 sudo apt-get install g++ curl libssl-dev apache2-utils 
 sudo apt-get install git-core 
 
-2.��¡Դ����
+2.克隆源代码
 
-�Ƚ���/homeΪ�Լ���һ��Ŀ¼��
+先进入/home为自己建一个目录：
 mkdir song
 
-�����±߽���nodeĿ¼�������أ�
+并在下边建立node目录用于下载：
 mkdir node
 
-��¡Դ���룺
+克隆源代码：
 git clone git://github.com/ry/node.git 
 
-3.��װ
-node��װ����configure/make�ķ�����ʹ��configure����ɨ��ϵͳ��������·��
+3.安装
+node安装采用configure/make的方法，使用configure程序扫描系统查找依赖路径
 ./configure
-����make������
+运行make来编译
 make 
-Ϊϵͳ��ȫ���û���װ
+为系统下全部用户安装
 sudo make install 
 
-�� ����
-����������һ�������ӵ�hello world�ĳ������ȴ���һ���ļ�����base.js,����ʵ�������ռ䣬��̳еȡ��Ա�ʵ�ִ�ͳ(java)�����ģʽ��
+二 入门
+让我们来做一个超复杂的hello world的程序。首先创建一个文件叫做base.js,其中实现命名空间，类继承等。以便实现传统(java)的设计模式。
 if (typeof Song == "undefined" || !Song) {
 	var Song = {
 		'version' : '1.1.0',
@@ -269,7 +269,7 @@ new StandardFormat({
 });
 })(Song);
 
-���˴������������http://127.0.0.1:8124����ʾ��hello��
-����˵����֮ǰдҳ���js��ʽ�������á�
+好了打开浏览器，访问http://127.0.0.1:8124，显示出hello。
+到此说明我之前写页面的js方式都可以用。
 
-�� ����һ��������
+三 创建一个聊天室
