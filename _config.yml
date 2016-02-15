@@ -16,8 +16,8 @@ blog:
 author:
     name: 宋小寅                                       # 作者名称
     email: 398088199@qq.com                                # 邮箱地址
-    weibo: http\://weibo.com/xiaoyinsong                   # 微博地址
-    github: https\://github.com/xiaoyinsong/              # GitHub地址
+    weibo: http://weibo.com/xiaoyinsong                   # 微博地址
+    github: https://github.com/xiaoyinsong/              # GitHub地址
     logo:                                                # logo地址
     douban:
         name:                                            # 豆瓣地址名称
