@@ -2,12 +2,17 @@
 layout: post
 title: "【Linux程序设计】学习笔记01"
 description: "第一章学习笔记"
-category: 'linux'
+category: 'linux c\c++'
 ---
 
-#####1.关于GPU
-
-GPU是图形处理单元(Graphic Processing Unit)的简称，用多个GPU处理器来并行计算
+#####1.UNIX哲学
+<ul>
+<li>简单性(KISS:Keep It Small and Simple)</li>
+<li>集中性</li>
+<li>可重用组件</li>
+<li>过滤器</li>
+<li>灵活性</li>
+</ul>
 
 
 
