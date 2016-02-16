@@ -32,7 +32,7 @@ sudo make install
 
 二 入门
 让我们来做一个超复杂的hello world的程序。首先创建一个文件叫做base.js,其中实现命名空间，类继承等。以便实现传统(java)的设计模式。
-<code>
+<div class="highlighter-rouge"><pre class="highlight"><code> 
 if (typeof Song == "undefined" || !Song) {
 	var Song = {
 		'version' : '1.1.0',
@@ -42,10 +42,10 @@ if (typeof Song == "undefined" || !Song) {
 }
 Song.namespace = function() {
 	var a = arguments, o = null, i, j, d;
-	for (i = 0; i < a.length; i = i + 1) {
+	for (i = 0; i &lt; a.length; i = i + 1) {
 		d = ("" + a[i]).split(".");
 		o = Song;
-		for (j = (d[0] == "Song") ? 1 : 0; j < d.length; j = j + 1) {
+		for (j = (d[0] == "Song") ? 1 : 0; j &lt; d.length; j = j + 1) {
 			o[d[j]] = o[d[j]] || {};
 			o = o[d[j]];
 		}
@@ -78,7 +78,7 @@ Class.prototype = {
 		return new Class(proto);
 	},
 	implement : function() {
-		for ( var i = 0, l = arguments.length; i < l; i++) {
+		for ( var i = 0, l = arguments.length; i &lt; l; i++) {
 			$extend(this.prototype, arguments[i]);
 		}
 	}
@@ -104,7 +104,7 @@ Class.Merge = function(previous, current) {
 };
 function $merge() {
 	var mix = {};
-	for ( var i = 0; i < arguments.length; i++) {
+	for ( var i = 0; i &lt; arguments.length; i++) {
 		for ( var property in arguments[i]) {
 			var ap = arguments[i][property];
 			var mp = mix[property];
@@ -162,7 +162,7 @@ var $extend = function() {
 	return args[0];
 };
 var Each = function(list, fun) {
-	for ( var i = 0, len = list.length; i < len; i++) {
+	for ( var i = 0, len = list.length; i &lt; len; i++) {
 		fun(list[i], i);
 	}
 };
@@ -183,7 +183,7 @@ var randomChar=function()  {
     var  x="qwertyuioplkjhgfdsazxcvbnm";
     var  tmp=[];
     var re;
-    for(var  i=0;i<  l;i++)  {
+    for(var  i=0;i&lt;  l;i++)  {
          tmp.push(x.charAt(Math.ceil(Math.random()*100000000)%x.length));
     }
     re=tmp.join("");
@@ -268,8 +268,8 @@ var StandardFormat = BaseClass.extend( {
 new StandardFormat({
 	name:"hello"
 });
-})(Song);
-</code>
+})(Song); 
+</code></pre></div>
 好了打开浏览器，访问http://127.0.0.1:8124，显示出hello。
 到此说明我之前写页面的js方式都可以用。
 
